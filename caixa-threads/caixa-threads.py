@@ -43,9 +43,9 @@ def observar_filas(fila_caixa1, fila_caixa2, fila_caixa3):
 
 # cria as filas de clientes para cada caixa
 # o random.randint está sendo utilizado para determinar a quantidade de itens e clientes de uma fila, sendo possível personalizar os valores de cada um.
-fila_caixa1 = [{'id': i+1, 'itens': random.randint(1,100)} for i in range(random.randint(1, 3)]
-fila_caixa2 = [{'id': i+1, 'itens': random.randint(1,100)} for i in range(random.randint(1, 3)]
-fila_caixa3 = [{'id': i+1, 'itens': random.randint(1,100)} for i in range(random.randint(1, 3)]
+fila_caixa1 = [{'id': i+1, 'itens': random.randint(1,100)} for i in range(random.randint(1, 3))]
+fila_caixa2 = [{'id': i+1, 'itens': random.randint(1,100)} for i in range(random.randint(1, 3))]
+fila_caixa3 = [{'id': i+1, 'itens': random.randint(1,100)} for i in range(random.randint(1, 3))]
 
 # cria as threads para cada caixa
 caixa1 = threading.Thread(target=operar_caixa, args=('Caixa 1', fila_caixa1))
